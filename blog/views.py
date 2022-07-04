@@ -15,4 +15,4 @@ logger = logging.getLogger(__name__)
 def home(request: Request)-> HttpResponse:
     logger.debug("hello ki!debug log ")
     print(request.META.get('REMOTE_ADDR'))
-    return render(request, 'blog/homeRU.html' )
+    return render(request, 'blog/base.html' )
